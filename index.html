@@ -20,8 +20,19 @@
             return (
                 <div>
                     <h2>🏠 Welcome & Overview</h2>
-                    <p>Hi there, I'm Benjamin 👋 Welcome to my GitHub profile hub!</p>
-                    <p>I am a passionate developer focused on building innovative, low-latency architectures and utilizing structured CI/CD environments for software delivery.</p>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        Hi there, I'm Benjamin 👋 Welcome to my GitHub profile hub! 
+                        I am a passionate developer focused on building innovative, low-latency architectures and utilizing structured CI/CD environments for software delivery.
+                    </p>
+                    
+                    <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f8f9fa', borderRadius: '6px', borderLeft: '4px solid #0366d6' }}>
+                        <p style={{ margin: 0, fontStyle: 'italic', color: '#555' }}>
+                            "New to GitHub, and I'm trying to figure how to use this platform correctly and appropriately for both work and testing. 
+                            I believe that this is a tool that is necessary, or a basic requirement for a lot of technology companies, 
+                            particularly in the software development space doing CI/CD development. Some of the repositories might be configured 
+                            and inappropriately configured and implemented -> do let me know via email."
+                        </p>
+                    </div>
                 </div>
             );
         }
@@ -30,10 +41,23 @@
             return (
                 <div>
                     <h2>🚀 Projects Portfolio</h2>
-                    <p>This section showcases my engineering work and proprietary software builds.</p>
-                    <div style={{ background: '#f9f9f9', padding: '15px', borderRadius: '5px', marginBottom: '15px' }}>
-                        <h3>🔹 Domain-Specific Machine Learning Models</h3>
-                        <p>Constructing mission-critical applications optimized for high-sensitivity fields with strict low-latency constraints.</p>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        This section showcases my engineering work, constraint-driven system topologies, and proprietary software builds.
+                    </p>
+                    
+                    <div style={{ background: '#fff', border: '1px solid #e1e4e8', padding: '20px', borderRadius: '6px', marginTop: '20px' }}>
+                        <h3 style={{ marginTop: 0, color: '#0366d6' }}>🔹 Proprietary Domain-Specific Machine Learning Models</h3>
+                        <p style={{ lineHeight: '1.6' }}>
+                            I build proprietary, domain-specific machine learning models that are application and industry-specific 
+                            based on published scientific journals and models designed for highly sensitive industries and mission-critical applications.
+                        </p>
+                        
+                        <h4 style={{ marginBottom: '8px', color: '#24292e' }}>⚡ Engineering Constraints Handled:</h4>
+                        <ul style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
+                            <li><strong>Time-Sensitivity:</strong> Execution constraints mapped to tight data windows.</li>
+                            <li><strong>Low-Latency Architecture:</strong> Performance-optimized runtimes to satisfy strict execution bounds.</li>
+                            <li><strong>Rapid Lifecycle:</strong> Very short conceptualization-to-development-to-market timeframes.</li>
+                        </ul>
                     </div>
                 </div>
             );
@@ -67,10 +91,8 @@
         // --- 2. MAIN APP COMPONENT (Manages Navigation & State) ---
 
         function App() {
-            // "currentPage" keeps track of which page is active. Defaults to 'home'
             const [currentPage, setCurrentPage] = React.useState('home');
 
-            // Navigation Button Styling
             const navLinkStyle = (pageName) => ({
                 padding: '10px 20px',
                 marginRight: '10px',
@@ -83,7 +105,6 @@
                 transition: 'all 0.2s'
             });
 
-            // Helper function to decide which sub-page component to render
             const renderPage = () => {
                 switch(currentPage) {
                     case 'home': return <HomePage />;
@@ -97,13 +118,11 @@
             return (
                 <div style={{ maxWidth: '850px', margin: '40px auto', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '0 20px', color: '#333' }}>
                     
-                    {/* Header Site Identity */}
                     <header style={{ marginBottom: '30px' }}>
                         <h1 style={{ fontSize: '2.2rem', marginBottom: '5px' }}>benjaminyzg's github project repository</h1>
                         <p style={{ color: '#666', margin: '0' }}>Centralized Documentation Hub</p>
                     </header>
 
-                    {/* Navigation Bar */}
                     <nav style={{ borderBottom: '2px solid #eaecef', paddingBottom: '15px', marginBottom: '30px' }}>
                         <button style={navLinkStyle('home')} onClick={() => setCurrentPage('home')}>Overview</button>
                         <button style={navLinkStyle('projects')} onClick={() => setCurrentPage('projects')}>Projects</button>
@@ -111,12 +130,10 @@
                         <button style={navLinkStyle('teaching')} onClick={() => setCurrentPage('teaching')}>Teaching</button>
                     </nav>
 
-                    {/* Dynamic Page Content Injector */}
                     <main style={{ minHeight: '300px', lineHeight: '1.6' }}>
                         {renderPage()}
                     </main>
 
-                    {/* Footer */}
                     <footer style={{ marginTop: '50px', borderTop: '1px solid #eee', paddingTop: '15px', fontSize: '14px', color: '#888' }}>
                         © 2026 benjaminyzg. Built seamlessly with React.
                     </footer>
@@ -125,7 +142,6 @@
             );
         }
 
-        // Render application to root element
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
     </script>
