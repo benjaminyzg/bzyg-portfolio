@@ -3,36 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Project Pages</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-        #content { background: #f9f9f9; padding: 20px; border-radius: 5px; }
-    </style>
+    <title>benjaminyzg's GitHub Project Repository</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
 
-    <h1>Project Documentation</h1>
-    <hr>
-    <div id="content">Loading documentation...</div>
+    <div id="root"></div>
 
-    <script>
-        // Fetch your README.md file (relative path if it's in the same repository folder)
-        fetch('README.md')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(markdownText => {
-                // Convert the Markdown text into HTML and insert it into the div
-                document.getElementById('content').innerHTML = marked.parse(markdownText);
-            })
-            .catch(error => {
-                console.error('Error fetching the README:', error);
-                document.getElementById('content').innerHTML = 'Failed to load documentation.';
-            });
+    <script type="text/babel">
+
+        // 1. Reusable component for your major sections
+        function Section({ title, emoji, children }) {
+            return (
+                <div style={{ marginTop: '40px', borderBottom: '1px solid #eee', paddingBottom: '20px' }}>
+                    <h2 style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#333' }}>
+                        <span>{emoji}</span> {title}
+                    </h2>
+                    <div style={{ color: '#444', lineHeight: '1.6', fontSize: '16px' }}>
+                        {children}
+                    </div>
+                </div>
+            );
+        }
+
+        // 2. Main Application
+        function App() {
+            return (
+                <div style={{ maxWidth: '850px', margin: '40px auto', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '0 20px' }}>
+                    
+                    {/* Updated Main Title */}
+                    <h1 style={{ fontSize: '2.5rem', marginBottom: '10px', color: '#111' }}>
+                        Welcome to benjaminyzg's github project repository
+                    </h1>
+                    <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '30px' }}>
+                        Hi there, I'm Benjamin 👋 Welcome to my GitHub profile! I'm a passionate developer...
+                    </p>
+
+                    <hr />
+
+                    {/* --- PORTFOLIO SECTION --- */}
+                    <Section title="Portfolio" emoji="💼">
+                        <p>An overview of my professional journey, core competencies, and executive summary.</p>
+                        <ul>
+                            <li><strong>Domain Expertise:</strong> Machine Learning, CI/CD pipelines, and secure infrastructure.</li>
+                            <li><strong>Current Focus:</strong> Developing high-sensitivity, low-latency proprietary models.</li>
+                        </ul>
+                    </Section>
+
+                    {/* --- PROJECTS SECTION --- */}
+                    <Section title="Projects" emoji="🚀">
+                        <p>Here are some of the key applications and systems I have conceptualized and built:</p>
+                        <div>
+                            <h3>🔹 Project Name 1</h3>
+                            <p>Description of a specific domain-specific machine learning model you built.</p>
+                            
+                            <h3>🔹 Project Name 2</h3>
+                            <p>Details about a separate codebase or system setup in this repository.</p>
+                        </div>
+                    </Section>
+
+                    {/* --- TEACHING SECTION --- */}
+                    <Section title="Teaching & Mentorship" emoji="🎓">
+                        <p>Sharing knowledge and breaking down complex technical architectures:</p>
+                        <ul>
+                            <li>Workshop / Course Title 1 — Brief description of what you taught.</li>
+                            <li>Technical Documentation — Guides constructed to help onboarding developers.</li>
+                        </ul>
+                    </Section>
+
+                    {/* --- PUBLICATIONS SECTION --- */}
+                    <Section title="Publications" emoji="📝">
+                        <p>Scientific journals, articles, or research whitepapers:</p>
+                        <ol>
+                            <li>
+                                <em>"Title of Your Research or Paper Here"</em> — Published Journal/Conference Name (2026).
+                                <br /><small style={{ color: '#666' }}>Brief summary of the paper's constraints (e.g., time-sensitivity, low-latency analysis).</small>
+                            </li>
+                        </ol>
+                    </Section>
+
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
     </script>
 
 </body>
