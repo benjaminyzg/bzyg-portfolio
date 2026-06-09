@@ -1,7 +1,7 @@
 # Hi there, I'm Benjamin 👋
 
 Welcome to my GitHub profile! I'm a passionate developer, always eager to learn and build innovative solutions.
-I appreciate the innovate use of aesthetic digital design - to convey and delivery message in a minimalistic language. 
+I appreciate the innovate use of aesthetic digital design - to convey my individualism in a minimalistic manner. 
 
 Any resemblance and similiarities is purely coincidental and unintended.
 
