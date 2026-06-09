@@ -1,7 +1,7 @@
 # Hi there, I'm Benjamin 👋
 
 Welcome to my GitHub profile! I'm a passionate developer, always eager to learn and build innovative solutions.
-I appreciate the innovate use of aesthetic digital design - to convey and delivery message in a minimalistic language 
+I appreciate the innovate use of aesthetic digital design - to convey and delivery message in a minimalistic language. 
 
 ## ℹ️ Overview
 New to GitHub, and I'm trying to figure how to use this platform correctly and appropriate for both work and testing. I believe that this is a tools that is necessary, or basic requirement for a lot of technology companies, particularly in the software development space doing CI/CD development. Some of respository might be configured and inappropriately configured and implemented -> do let me know via email.
