@@ -74,10 +74,64 @@
                         • <strong>ML Framework:</strong> Tensorflow; Pytorch; Google Colab <br/>
                         • <strong>Knowledge-Base Management:</strong> Confluence; Wiki; Trello; Jira <br/>
                     </p>
+                    
+                    <h2> 🪧 Commercial Collaboration </h2>
+                    <p>
+                        - Open for commercial collaboration in the area of advisory and consultancy work for government; capital market; healthcare and sustainability.<br/>
+                        - Open to speak for a nominal fee in public international conference and forum.<br/>
+                    </p>
 
+                    <h2>🗂️ Academic Publications </h2>
+                    <p>
+                        - to be completed -
+                    </p>
+                    <h3>📛 Conferences/Talks</h3>
+                    <p>
+                        - to be completed -
+                    </p>
                 </div>
             );
         }
+        function AboutPage() {
+    return (
+        <div>
+            <h2>📝 About Me </h2>
+            <p>Here you will find information about my background, experience, and professional roadmap.</p>
+            
+            <h3>Background</h3>
+            <p>
+                Born and raised in Singapore, Benjamin Yong is a computer engineering professional with an adaptive background spanning systems administration, network engineering, business process outsourcing, and public sector digital transformations.
+            </p>
+
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <strong>Nanyang Technological University, Singapore (2009 - 2013):</strong> Bachelor of Engineering (Computer Engineering) with a Minor in Business.
+                </li>
+            </ul>
+
+            <h3>Professional Experience</h3>
+            <ul>
+                <li>
+                    <strong>Accenture Pte Ltd:</strong> Business and Technology Analyst (Health & Public Service), contributing to the whole-of-government digital transformation roadmap to build fully-digitized customer experiences.
+                </li>
+                <li>
+                    <strong>Trusted Hub Limited:</strong> Business Development Executive focused on digitalizing regulated, critical industry documents in compliance with Evidence Act standards.
+                </li>
+                <li>
+                    <strong>Commerzbank AG (Singapore Branch):</strong> Graduate Trainee in the APAC Network Engineering Team (managing Cisco infrastructure, firewalls, and trading floor telephony) and previously a Business Management Intern ensuring MAS Technology Outsourcing Guideline compliance.
+                </li>
+                <li>
+                    <strong>Topcall Messaging Pte Ltd (inCall System):</strong> Application Systems Engineer.
+                </li>
+            </ul>
+            <h3>Interests & Volunteering</h3>
+            <p>
+                Beyond tech, Benjamin is active in community welfare, including historical volunteer work distributing rations locally and an international deployment with Man Fut Tong to Yangon, Myanmar. His personal hobbies include traveling, scuba diving, hiking, running, and catching up over a latte.
+            </p>
+        </div>
+    );
+}
         function ProjectsPage(){
             return (
                 <div>
@@ -202,6 +256,7 @@
             const renderPage = () => {
                 switch(currentPage) {
                     case 'home': return <HomePage />;
+                    case 'about': return <AboutPage />;
                     case 'projects': return <ProjectsPage />;
                     case 'publications': return <PublicationsPage />;
                     case 'teaching': return <TeachingPage />;
@@ -220,9 +275,10 @@
 
                     <nav style={{ borderBottom: '2px solid #eaecef', paddingBottom: '15px', marginBottom: '30px' }}>
                         <button style={navLinkStyle('home')} onClick={() => setCurrentPage('home')}>Overview</button>
-                        <button style={navLinkStyle('projects')} onClick={() => setCurrentPage('projects')}>Projects</button>
+                        <button style={navLinkStyle('about')} onClick={() => setCurrentPage('about')}>About</button>
                         <button style={navLinkStyle('publications')} onClick={() => setCurrentPage('publications')}>Publications</button>
                         <button style={navLinkStyle('teaching')} onClick={() => setCurrentPage('teaching')}>Teaching</button>
+                        <button style={navLinkStyle('projects')} onClick={() => setCurrentPage('projects')}>Projects</button>
                         <button style={navLinkStyle('contact')} onClick={() => setCurrentPage('contact')}>Contact</button>
                     </nav>
 
