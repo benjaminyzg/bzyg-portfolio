@@ -6,15 +6,15 @@ Welcome to my GitHub profile! I'm a passionate developer, always eager to learn 
 New to GitHub, and I'm trying to figure how to use this platform correctly and appropriate for both work and testing. I believe that this is a tools that is necessary, or basic requirement for a lot of technology companies, particularly in the software development space doing CI/CD development. Some of respository might be configured and inappropriately configured and implemented -> do let me know via email.
 
 ## 📝 Description 
--Testing in Progress, please bear with us- I'm currently a (insert role and function) with (organisation). The domain and field that I'm currently working on (insert the area of specialized domain and knowledge). On a day to day basis, I does (function & work) in the department of (insert department).
+-Testing in Progress, please bear with us/me- 
+I'm currently a (insert role and function) with (organisation). The domain and fields that I'm currently working on (insert the area of specialized domain and knowledge). On a day to day basis, I does (function & work) in the department of (insert department). My area of interests and specialisation include machine learning; both front-end & back-end web development. 
 
-I build proprietary, domain-specific machine learning models that are application and industry-specific based on the published, scientific journal and model designed for highly sensitive industry and mission-critical application. Some of the constraints include; time-sensitivity; low-latency and very short conceptualisation to development to market timeframe.
+I build proprietary, domain-specific machine learning models that are application and industry-specific based on the published, scientific journal and model designed for highly sensitive industry and mission-critical application. Some of the constraints include; time-sensitivity; low-latency and very short conceptualisation-to-development-to market timeframe.
 
 ## 🛠️ Currently Working On:-
-- Express.js
-- Next.js
-- Spring Boot
-- Spring IO
+- Express.js; Next.js
+- Spring Boot; Spring IO
+- Ruby by Rails; Django
 
 ## 🚀 About Me
 - 🌱 Currently exploring **AI/ML** and **Blockchain** technologies.
