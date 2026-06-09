@@ -19,14 +19,14 @@ I build proprietary, domain-specific machine learning models that are applicatio
 - Java; SQL; C; C++; 
 
 ## 🚀 About Me
-- 🌱 Currently exploring **AI/ML**; **CI/CD** and **Sustainability** technologies.
+- 🌱 Currently exploring **ML**; **CI/CD** and **Sustainability** technologies.
 - 👨‍💻 Working on open-source projects and contributing to the developer community.
 - 🤿 Certified Recreational Scuba Diver (Open Water/Advanced)
 - 🎓 Background in Computer Engineering and Software Engineering.
 - 🏴󠁳󠁬󠁷󠁿 Area of Interest: Medicine; Computer Science; Healthcare; Capital Market
 
 ## 💡 Interests
-- Artificial Intelligence (AI)
+- Machine Learning (ML)
 - Sustainability/Climate Change
 - Machine Learning Model (i.e. time-series modelling)
 - Full-Stack Development (i.e. Front/Back-End Development)
