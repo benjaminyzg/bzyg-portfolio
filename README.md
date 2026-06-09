@@ -19,7 +19,7 @@ I build proprietary, domain-specific machine learning models that are applicatio
 - Java; SQL; C; C++; 
 
 ## 🚀 About Me
-- 🌱 Currently exploring **AI/ML** and **Blockchain** technologies.
+- 🌱 Currently exploring **AI/ML**; **CI/CD** and **Sustainability** technologies.
 - 👨‍💻 Working on open-source projects and contributing to the developer community.
 - 🤿 Certified Recreational Scuba Diver (Open Water/Advanced)
 - 🎓 Background in Computer Engineering and Software Engineering.
