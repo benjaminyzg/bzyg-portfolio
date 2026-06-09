@@ -10,13 +10,10 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-
     <div id="root"></div>
-
     <script type="text/babel">
         // --- 1. DEFINE YOUR INDIVIDUAL PAGES ---
-
-        function HomePage() {
+        function HomePage(){
             return (
                 <div>
                     <h2>🏠 Welcome & Overview</h2>
@@ -33,11 +30,55 @@
                             and inappropriately configured and implemented -> do let me know via email."
                         </p>
                     </div>
+                    <h2> 🛠️ What I do and build </h2>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        I build proprietary, domain-specific machine learning models that are application and industry-specific based on the published, scientific journal and model designed for highly sensitive industry and mission-critical application. Some of the constraints include; time-sensitivity; low-latency and very short conceptualisation-to-development-to market timeframe.
+                    </p>
+
+                    <h2> 🛠️ Currently Working On:- </h2>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                       <strong> • </strong> Express.js; Next.js; <br/>
+                       <strong> • </strong> Spring Boot; Spring IO; <br/>
+                       <strong> • </strong> Ruby by Rails; Django; <br/>
+                       <strong> • </strong> CSS Tailwind; React; Angular; <br/>
+                       <strong> • </strong> Java; SQL; C; C++; <br/>
+                    </p>
+                    
+                    <h2>🚴Leisure/Hobbies </h2>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        <strong> • </strong> ✈️ Travelling (i.e. Leisure & Business), <br/>
+                        <strong> • </strong> 🤿 Scuba Diving (i.e. Recreational), <br/>
+                        <strong> • </strong> 📖 Reading/Exercising (i.e. Running; Cycling), <br/>
+                        <strong> • </strong> 🥾 Hiking (i.e. Nature Park), <br/>
+                        <strong> • </strong> 😴 Sleeping/Resting <br/>
+                    </p>
+
+                    <h2> 💡 Interests </h2>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        <strong> • </strong> Machine Learning (ML)<br/>
+                        <strong> • </strong> Sustainability/Climate Change<br/>
+                        <strong> • </strong> Machine Learning Model (i.e. time-series modelling)<br/>
+                        <strong> • </strong> Full-Stack Development (i.e. Front/Back-End Development)<br/>
+                        <strong> • </strong> UX/UI Design & Prototyping<br/>
+                        <strong> • </strong> CI/CD Development & MLOps
+                        <strong> • </strong> Open Source Collaboration<br/>
+                    </p>
+
+                    <h2> 🛠️ Tools & Technologies </h2>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
+                        • <strong>Languages:</strong> Python, JavaScript, TypeScript, Java, C++ <br/>
+                        • <strong>Frameworks:</strong> React, Node.js, Django; Rails on Ruby <br/>
+                        • <strong>DevOps:</strong> Docker, Kubernetes, GitHub Actions <br/>
+                        • <strong>Databases:</strong> PostgreSQL, MongoDB, SQLite <br/>
+                        • <strong>Cloud:</strong> AWS, GCP; W&B ; HF <br/>
+                        • <strong>ML Framework:</strong> Tensorflow; Pytorch; Google Colab <br/>
+                        • <strong>Knowledge-Base Management:</strong> Confluence; Wiki; Trello; Jira <br/>
+                    </p>
+
                 </div>
             );
         }
-
-        function ProjectsPage() {
+        function ProjectsPage(){
             return (
                 <div>
                     <h2>🚀 Projects Portfolio</h2>
@@ -62,8 +103,7 @@
                 </div>
             );
         }
-
-        function PublicationsPage() {
+        function PublicationsPage(){
             return (
                 <div>
                     <h2>📝 Publications & Research</h2>
@@ -74,8 +114,7 @@
                 </div>
             );
         }
-
-        function TeachingPage() {
+        function TeachingPage(){
             return (
                 <div>
                     <h2>🎓 Teaching & Mentorship</h2>
@@ -86,29 +125,65 @@
                 </div>
             );
         }
-        function ContactPage() {
-            return (
+        function ContactPage(){
+            const rowStyle = {
+            display: 'grid',
+            gridTemplateColumns: '120px 1fr', 
+            alignItems: 'start'
+        };
+
+        return (
+            <div>
+            <h2>🎓 Contact </h2>
+            <p>How can you reach out to me</p>
+            <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                
+                {/* Mailing Section */}
+                <li style={rowStyle}>
+                <strong>Mailing:</strong>
+                <span>
+                    Balestier Road Post Office<br />
+                    PO Box 30, Singapore 913001
+                </span>
+                </li>
+                {/* Phone Section */}
+                <li style={rowStyle}>
+                <strong>Phone:</strong>
+                <span>(65) 9746 0554</span>
+                </li>
+                {/* Mail Section */}
+                <li style={rowStyle}>
+                <strong>Mail:</strong>
                 <div>
-                    <h2>🎓 Contact </h2>
-                    <p>How can you reach out to me</p>
-                    <ul>
-                        <li style={{ marginBottom: '15px' }}>
-  <strong>Mailing:</strong>{' '}
-  <span style={{ display: 'inline-block', verticalAlign: 'top' }}>
-    Balestier Road Post Office<br />
-    PO Box 30, Singapore 913001
-  </span>
-</li>
-                        <li><strong>Phone: </strong>     +65 9746 0554</li>
-                        <li><strong>Mail: </strong>      hello@benjaminy.com</li>
-                        <li><strong>Web: </strong>       www.benjaminy.com</li>
-                    </ul>
+                    <a href="mailto:hello@benjaminy.com">
+                    hello@benjaminy.com
+                    </a>
                 </div>
-            );
-        }
+                </li>
+                {/* Web Section */}
+                <li style={rowStyle}>
+                <strong>Web:</strong>
+                <div>
+                    <a href="https://www.benjaminy.com" target="_blank" rel="noopener noreferrer">
+                    www.benjaminy.com
+                    </a>
+                </div>
+                </li>
+                {/* GitHub Profile */}
+                <li style={rowStyle}>
+                <strong>GitHub:</strong>
+                <div>
+                    <a href="https://github.com/benjaminyzg" target="_blank" rel="noopener noreferrer">
+                    github.com/benjaminyzg
+                    </a>
+                </div>
+                </li>
 
+            </ul>
+            </div>
+        );
+}
         // --- 2. MAIN APP COMPONENT (Manages Navigation & State) ---
-
         function App() {
             const [currentPage, setCurrentPage] = React.useState('home');
 
@@ -165,6 +240,5 @@
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
     </script>
-
 </body>
 </html>
