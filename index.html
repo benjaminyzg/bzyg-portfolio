@@ -255,6 +255,7 @@
                 minWidth: '120px',            // Prevents buttons from squishing too small
                 textAlign: 'center',   
                 padding: '10px 20px',
+                justifyContent: 'space-between',
                 marginRight: '10px',
                 cursor: 'pointer',
                 backgroundColor: currentPage === pageName ? '#0366d6' : '#f6f8fa',
@@ -279,7 +280,51 @@
 
             return (
                 <div style={{ maxWidth: '850px', margin: '40px auto', fontFamily: 'system-ui, -apple-system, sans-serif', padding: '0 20px', color: '#333' }}>
-                    
+
+                    {/* Dynamic Page Content Sections */}
+    <main>
+      {currentPage === 'home' && (
+        <div>
+          <h2>Overview</h2>
+          <p>Welcome to my portfolio! This is the main landing view.</p>
+        </div>
+      )}
+
+      {currentPage === 'about' && (
+        <div>
+          <h2>About Me</h2>
+          <p>This is the description page about my background and research.</p>
+        </div>
+      )}
+
+      {currentPage === 'publications' && (
+        <div>
+          <h2>Publications</h2>
+          <p>List of journals, conference papers, and abstracts.</p>
+        </div>
+      )}
+
+      {currentPage === 'teaching' && (
+        <div>
+          <h2>Teaching Experience</h2>
+          <p>Details regarding modules or classes taught.</p>
+        </div>
+      )}
+
+      {currentPage === 'projects' && (
+        <div>
+          <h2>Projects</h2>
+          <p>Showcase of repositories and developments.</p>
+        </div>
+      )}
+    </main>
+      {currentPage === 'contact' && (
+        <div>
+          <h2>Contact</h2>
+          <p>How to reach out to me via email or office location.</p>
+        </div>
+      )}    
+
                     <nav style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', borderBottom: '2px solid #eaecef', 
                         paddingBottom: '15px', marginBottom: '30px'}}>    
                     </nav>    
@@ -289,7 +334,7 @@
                         <p style={{ color: '#666', margin: '0' }}>Centralized Documentation Hub</p>
                     </header>
 
-                    <nav style={{ borderBottom: '2px solid #eaecef', gap: '10px', flexWrap: 'wrap', paddingBottom: '15px', marginBottom: '30px' }}>
+                    <nav style={{ borderBottom: '2px solid #eaecef', gap: '10px', flexWrap: 'wrap', paddingBottom: '15px', columnGap: '10px',justifyContent: 'flex-start',gap: '8px',rowGap: '12px',marginBottom: '30px' }}>
                         <button style={navLinkStyle('home')} onClick={() => setCurrentPage('home')}>Overview</button>
                         <button style={navLinkStyle('about')} onClick={() => setCurrentPage('about')}>About</button>
                         <button style={navLinkStyle('publications')} onClick={() => setCurrentPage('publications')}>Publications</button>
