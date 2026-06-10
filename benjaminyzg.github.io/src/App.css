@@ -182,3 +182,27 @@
     border-right-color: var(--border);
   }
 }
+/* 1. Aligns the grid of buttons and centers them */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;       /* Allows buttons to wrap to the next line smoothly */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 12px;             /* Spacing between the buttons */
+  max-width: 600px;      /* Keeps the layout tight so they wrap cleanly into 2 rows if needed */
+  margin: 0 auto;        /* Centers the entire container on the page */
+  padding: 20px 0;
+}
+
+/* 2. Forces all buttons to be identical in size */
+.nav-button {
+  flex: 1 1 150px;       /* Explainer: Grow/shrink equally, with a baseline width of 150px */
+  max-width: 180px;      /* Prevents buttons from stretching too wide on massive screens */
+  height: 45px;          /* Forces a uniform height */
+  
+  /* Optional: Clean up text alignment inside the buttons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Keep your existing border-radius, background-color, and padding rules here */
+}
