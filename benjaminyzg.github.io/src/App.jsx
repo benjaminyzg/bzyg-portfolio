@@ -329,13 +329,4 @@ function AppContent() {
   );
 }
 
-<<<<<<< HEAD
-// Fixed root definition entry point
-export default function App() {
-  return (
-      <AppContent />
-  );
-}
-=======
 export default App;
->>>>>>> 3ae40f49f82ba36f9df54f1f5e8a74024e0640fe
