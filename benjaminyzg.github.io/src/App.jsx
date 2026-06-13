@@ -214,21 +214,6 @@ function Contact() {
         📭 Contact
       </h2>
 
-      {/* Row 1: Mailing */}
-      <strong style={{ textAlign: 'left', width: '100%' }}>Mailing:</strong>
-      <div style={{ textAlign: 'left', lineHeight: '1.4' }}>
-        <a href="http://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
-          Balestier Road Post Office<br />
-          PO Box 30, Singapore 913001
-        </a>
-      </div>
-
-      {/* Row 2: Phone */}
-      <strong style={{ textAlign: 'left', width: '100%' }}>Phone:</strong>
-      <div style={{ textAlign: 'left' }}>
-        <span style={{ color: '#333' }}>(65) 9746 0554</span>
-      </div>
-
       {/* Row 3: Mail */}
       <strong style={{ textAlign: 'left', width: '100%' }}>Mail:</strong>
       <div style={{ textAlign: 'left' }}>
@@ -241,8 +226,7 @@ function Contact() {
       <strong style={{ textAlign: 'left', width: '100%' }}>Web:</strong>
       <div style={{ textAlign: 'left' }}>
         <a href="https://www.benjaminy.com" target="_blank" rel="noopener noreferrer" style={{ color: 'purple', textDecoration: 'underline' }}>
-          www.benjaminy.com
-        </a>
+          www.benjaminy.com        </a>
       </div>
 
       {/* Row 5: GitHub */}
