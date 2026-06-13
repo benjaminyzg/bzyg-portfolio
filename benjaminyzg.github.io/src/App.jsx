@@ -81,6 +81,157 @@ function About() {
     <div style={{ marginTop: '30px', lineHeight: '1.6' }}>
       <h2 style={{ color: '#222', borderBottom: '1px solid #eee', paddingBottom: '8px' }}>📝 About Me</h2>
       <p>Born and raised in Singapore, Benjamin Yong is a computer engineering professional with an adaptive background spanning systems administration, network engineering, and public sector digital transformations.</p>
+            <p>Here you will find information about my background, experience, and professional roadmap.</p>
+            
+            <h3>Background</h3>
+            <p>
+                Born and raised in Singapore, Benjamin Yong is a computer engineering professional with an adaptive background spanning systems administration, network engineering, business process outsourcing, and public sector digital transformations.
+            </p>
+
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <strong>Nanyang Technological University, Singapore (2009 - 2013):</strong> Bachelor of Engineering (Computer Engineering) with a Minor in Business.
+                </li>
+            </ul>
+
+            <h3>Professional Experience</h3>
+            <ul>
+                <li>
+                    <strong>Accenture Pte Ltd:</strong> Business and Technology Analyst (Health & Public Service), contributing to the whole-of-government digital transformation roadmap to build fully-digitized customer experiences.
+                </li>
+                <li>
+                    <strong>Trusted Hub Limited:</strong> Business Development Executive focused on digitalizing regulated, critical industry documents in compliance with Evidence Act standards.
+                </li>
+                <li>
+                    <strong>Commerzbank AG (Singapore Branch):</strong> Graduate Trainee in the APAC Network Engineering Team (managing Cisco infrastructure, firewalls, and trading floor telephony) and previously a Business Management Intern ensuring MAS Technology Outsourcing Guideline compliance.
+                </li>
+                <li>
+                    <strong>Topcall Messaging Pte Ltd (inCall System):</strong> Application Systems Engineer.
+                </li>
+            </ul>
+      <h3>Interests & Volunteering</h3>
+      <p> Beyond tech, Benjamin is active in community welfare, including historical volunteer work distributing rations locally and an international deployment with Man Fut Tong to Yangon, Myanmar. His personal hobbies include traveling (i.e. leisure/business), recreational scuba diving, hiking, running, and catching up over a latte.
+          </p>
+
+    </div>
+  );}
+
+  function Publications(){ 
+    return <div style={{ marginTop: '20px', textAlign: 'center' }}>
+    <h2>📝 Publications & Research</h2>
+    <p style={{ color: '#666' }}>Research papers and listings.</p> 
+
+    <div style={{ textAlign: 'justify', maxWidth: '600px', margin: '0 auto' }}>  
+      <h3>Publications & Papers</h3>
+      <ul>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+            </ul>
+
+      <h3>Published Books & Articles</h3>
+      <ul>
+          <li>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                </li>
+      </ul>
+    </div>
+    </div>
+  }
+
+
+function Teaching() { 
+  return <div style={{ marginTop: '20px', textAlign: 'center' }}>
+    <h2>🎓 Teaching & Mentorship</h2>
+    <p style={{ color: '#666' }}>Courses and academic instruction history.</p>
+    
+    <div style={{ textAlign: 'justify', maxWidth: '600px', margin: '0 auto' }}>
+    <h3>Teaching & Mentorships</h3>
+      <ul>
+          <li>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                </li>
+      </ul>
+    </div>;
+    </div>; 
+}
+
+function Projects() { return <div style={{ marginTop: '20px', textAlign: 'center' }}><h2>🚀 Projects Portfolio</h2><p style={{ color: '#666' }}>Software builds and code repositories.</p></div>; }
+
+function Contact() {
+  return (
+    <div 
+      style={{ 
+        display: 'grid', 
+        gridTemplateColumns: '120px 1fr', 
+        rowGap: '2px',             /* Reduced from 16px to 4px to pack rows together tightly */
+        columnGap: '0px', 
+        justifyItems: 'start', 
+        alignItems: 'start', 
+        marginTop: '20px', 
+        textAlign: 'left',
+      }}
+    >
+      
+      {/* Header with zero bottom margin to prevent pushing rows away */}
+      <h2 style={{ 
+        gridColumn: '1 / -1', 
+        color: '#222', 
+        borderBottom: '1px solid #eee', 
+        paddingBottom: '8px', 
+        marginBottom: '8px',       /* Locks the header tight to the first row */
+        width: '100%' 
+      }}>
+        📭 Contact
+      </h2>
+
+      {/* Row 3: Mail */}
+      <strong style={{ textAlign: 'left', width: '100%' }}>Mail:</strong>
+      <div style={{ textAlign: 'left' }}>
+        <a href="mailto:hello@benjaminy.com" style={{ color: 'blue', textDecoration: 'underline' }}>
+          hello@benjaminy.com
+        </a>
+      </div>
+
+      {/* Row 4: Web */}
+      <strong style={{ textAlign: 'left', width: '100%' }}>Web:</strong>
+      <div style={{ textAlign: 'left' }}>
+        <a href="https://www.benjaminy.com" target="_blank" rel="noopener noreferrer" style={{ color: 'purple', textDecoration: 'underline' }}>
+          www.benjaminy.com        </a>
+      </div>
+
+      {/* Row 5: GitHub */}
+      <strong style={{ textAlign: 'left', width: '100%' }}>GitHub:</strong>
+      <div style={{ textAlign: 'left' }}>
+        <a href="https://github.com/benjaminyzg" target="_blank" rel="noopener noreferrer" style={{ color: 'blue', textDecoration: 'underline' }}>
+          github.com/benjaminyzg
+        </a>
+      </div>
+
     </div>
   );
 }
@@ -178,9 +329,13 @@ function AppContent() {
   );
 }
 
+<<<<<<< HEAD
 // Fixed root definition entry point
 export default function App() {
   return (
       <AppContent />
   );
 }
+=======
+export default App;
+>>>>>>> 3ae40f49f82ba36f9df54f1f5e8a74024e0640fe
