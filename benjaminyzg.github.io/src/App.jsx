@@ -77,17 +77,115 @@ function Overview() {
 }
 
 function About() {
-  return ( 
+  return (
     <div style={{ marginTop: '30px', lineHeight: '1.6' }}>
-      <h2 style={{ color: '#222', borderBottom: '1px solid #eee', paddingBottom: '8px' }}>📝 About Me</h2>
-      <p>Born and raised in Singapore, Benjamin Yong is a computer engineering professional with an adaptive background spanning systems administration, network engineering, and public sector digital transformations.</p>
+      <h2 style={{ color: '#222', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>📝 About Me</h2>
+      
+      <h3>Background</h3>
+      <p>
+        Born and raised in Singapore, Benjamin Yong is a computer engineering professional 
+        with an adaptive background spanning systems administration, network engineering, 
+        business process outsourcing, and public sector digital transformations.
+      </p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Nanyang Technological University, Singapore (2009 - 2013):</strong> Bachelor of Engineering (Computer Engineering) with a Minor in Business.
+        </li>
+      </ul>
+
+      <h3>Professional Experience</h3>
+      <ul>
+        <li>
+          <strong>Accenture Pte Ltd:</strong> Business and Technology Analyst (Health & Public Service), contributing to the whole-of-government digital transformation roadmap to build fully-digitized customer experiences.
+        </li>
+        <li>
+          <strong>Trusted Hub Limited:</strong> Business Development Executive focused on digitalizing regulated, critical industry documents in compliance with Evidence Act standards.
+        </li>
+        <li>
+          <strong>Commerzbank AG (Singapore Branch):</strong> Graduate Trainee in the APAC Network Engineering Team (managing Cisco infrastructure, firewalls, and trading floor telephony) and previously a Business Management Intern ensuring MAS Technology Outsourcing Guideline compliance.
+        </li>
+        <li>
+          <strong>Topcall Messaging Pte Ltd (inCall System):</strong> Application Systems Engineer.
+        </li>
+      </ul>
+
+      <h3>Interests & Volunteering</h3>
+      <p>
+        Beyond tech, Benjamin is active in community welfare, including historical volunteer work distributing rations locally and an international deployment with Man Fut Tong to Yangon, Myanmar. His personal hobbies include traveling, scuba diving, hiking, running, and catching up over a latte.
+      </p>
     </div>
   );
 }
 
-function Publications() { return <div style={{ marginTop: '20px' }}><h2>📝 Publications & Research</h2><p>Content to be completed.</p></div>; }
-function Teaching() { return <div style={{ marginTop: '20px' }}><h2>🎓 Teaching & Mentorship</h2><p>Content to be completed.</p></div>; }
-function Projects() { return <div style={{ marginTop: '20px' }}><h2>🚀 Projects Portfolio</h2><p>Content to be completed.</p></div>; }
+function Publications() {
+  return (
+    <div style={{ marginTop: '20px' }}>
+      <h2>📝 Publications & Research</h2>
+      <p>
+        Here you will find documentation, academic references, and deep-dives into technical designs.
+      </p>
+      <ul>
+        <li>
+          <strong>Low-Latency System Architectures (2026):</strong> An analysis of constraint handling under rapid development lifecycles.
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function Teaching() {
+  return (
+    <div style={{ marginTop: '20px' }}>
+      <h2>🎓 Teaching & Mentorship</h2>
+      <p>
+        Documentation and training structures created to guide onboarding developers and teams.
+      </p>
+      <ul>
+        <li>
+          <strong>CI/CD Workflow Operations —</strong> Internal standardizations and testing metrics frameworks.
+        </li>
+      </ul>
+    </div>
+  );
+}
+function Projects() {
+  return (
+    <div style={{ marginTop: '20px' }}>
+      <h2>🚀 Projects Portfolio</h2>
+      <p>
+        This section showcases my engineering work, constraint-driven system topologies, and proprietary software builds.
+      </p>
+
+      <div style={{ 
+        border: '1px solid #e1e4e8', 
+        borderRadius: '6px', 
+        padding: '20px', 
+        backgroundColor: '#f8f9fa',
+        marginTop: '15px'
+      }}>
+        <h3 style={{ color: '#0366d6', marginTop: 0 }}>🔹 Proprietary Domain-Specific Machine Learning Models</h3>
+        <p>
+          I build proprietary, domain-specific machine learning models that are application and industry-specific based on published scientific journals and models designed for highly sensitive industries and mission-critical applications.
+        </p>
+
+        <h4 style={{ marginTop: '15px', marginBottom: '10px' }}>⚡ Engineering Constraints Handled:</h4>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li style={{ marginBottom: '8px' }}>
+            <strong>Time-Sensitivity:</strong> Execution constraints mapped to tight data windows.
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <strong>Low-Latency Architecture:</strong> Performance-optimized runtimes to satisfy strict execution bounds.
+          </li>
+          <li style={{ marginBottom: '8px' }}>
+            <strong>Rapid Lifecycle:</strong> Very short conceptualization-to-development-to-market timeframes.
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
 
 function Contact() {
   return (
