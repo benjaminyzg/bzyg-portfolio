@@ -93,16 +93,11 @@ function Contact() {
   return (
     <div style={{ marginTop: '20px', textAlign: 'left', lineHeight: '1.8' }}>
       <h2 style={{ color: '#222', borderBottom: '1px solid #eee', paddingBottom: '8px' }}>📭 Contact</h2>
-      
-      {/* --- NEW HIGHLIGHTED TEXT START --- */}
-      <p style={{ margin: '15px 0 5px 0' }}>How can you reach out to me?</p>
+            <p style={{ margin: '15px 0 5px 0' }}>How can you reach out to me?</p>
       <ul style={{ margin: '0 0 20px 0', paddingLeft: '20px' }}>
         <li>Available for commercial, research and industry collaboration</li>
         <li>Open to speak and to moderate at public international conference and talks</li>
       </ul>
-      {/* --- NEW HIGHLIGHTED TEXT END --- */}
-
-
       <div style={{ display: 'grid', gridTemplateColumns: '120px 1fr', rowGap: '0px', marginTop: '15px' }}>
   <div><strong>Email:</strong></div>
   <div><a href="mailto:hello@benjaminy.com">hello@benjaminy.com</a></div>
