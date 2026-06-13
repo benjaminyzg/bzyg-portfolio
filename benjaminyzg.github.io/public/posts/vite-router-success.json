@@ -1,0 +1,5 @@
+{
+  "title": "Vite and React Router V6",
+  "date": "June 13, 2026",
+  "content": "Success! We decoupled our data stream. Our application reads the browser address bar parameter, requests the matching asset file from our asset bucket, and displays it seamlessly."
+}

@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Hello Sandbox World", "slug": "hello-sandbox", "excerpt": "Testing our dynamic content engine live!" },
+  { "id": 2, "title": "Vite and React Router V6", "slug": "vite-router-success", "excerpt": "Look mom, no hardcoded component arrays!" },
+  { "id": 3, "title": "My Live GitHub Entry", "slug": "my-live-entry", "excerpt": "This was added completely on the fly!" }
+]
