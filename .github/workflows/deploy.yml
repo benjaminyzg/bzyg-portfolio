@@ -2,12 +2,17 @@ name: Deploy React to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # Change this to master if your default branch is master
+    branches: [ main ]
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# This tells GitHub to run all terminal commands inside your subfolder
+defaults:
+  run:
+    working-directory: benjaminyzg.github.io
 
 jobs:
   build-and-deploy:
@@ -19,13 +24,15 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9 # Matches standard pnpm setups
+          version: 9
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
+          # This tells the cacher where to find your lockfile
+          cache-dependency-path: benjaminyzg.github.io/pnpm-lock.yaml
 
       - name: Install and Build
         run: |
@@ -38,7 +45,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Change to './build' if your build output folder is different
+          # Points directly to the build output folder inside your subfolder
+          path: './benjaminyzg.github.io/dist' 
 
       - name: Deploy to GitHub Pages
         id: deployment
