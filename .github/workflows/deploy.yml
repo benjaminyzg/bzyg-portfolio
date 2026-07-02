@@ -9,7 +9,6 @@ permissions:
   pages: write
   id-token: write
 
-# This tells GitHub to run all terminal commands inside your subfolder
 defaults:
   run:
     working-directory: benjaminyzg.github.io
@@ -30,9 +29,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
-          # This tells the cacher where to find your lockfile
-          cache-dependency-path: benjaminyzg.github.io/pnpm-lock.yaml
+          # Removed the cache setting to bypass the path resolution error
 
       - name: Install and Build
         run: |
@@ -45,7 +42,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Points directly to the build output folder inside your subfolder
           path: './benjaminyzg.github.io/dist' 
 
       - name: Deploy to GitHub Pages
