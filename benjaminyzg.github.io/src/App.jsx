@@ -111,6 +111,19 @@ function About() {
         </li>
       </ul>
 
+      <h3>Open to the following opportunities</h3>
+      <ul>
+        <li>
+          <strong>Research & Collaboration:</strong> Collaboration & Publishing of Academic Journal.
+        </li>
+        <li>
+          <strong>Mentorship:</strong> PhD/Academia Publication.
+        </li>
+        <li>
+          <strong>Commerical:</strong> Paid/Sponsored Directorship.
+        </li>
+      </ul>
+      
       <h3>Interests & Volunteering</h3>
       <p>
         Beyond tech, Benjamin is active in community welfare, including historical volunteer work distributing rations locally and an international deployment with Man Fut Tong to Yangon, Myanmar. His personal hobbies include traveling, scuba diving, hiking, running, and catching up over a latte.
