@@ -1,5 +1,14 @@
 # Security Policy
 
+## Overview
+The security of this project is a top priority. I am committed to maintaining a secure environment for all users and contributors by following industry-standard practices, managing dependencies carefully, and responding promptly to identified vulnerabilities.
+
+## Purpose
+The purpose of this document is to provide a clear, transparent framework for:
+* Defining which versions of this project are actively maintained.
+* Establishing a reliable, private process for reporting security vulnerabilities.
+* Ensuring that reported issues are handled with the necessary urgency and discretion to protect the community.
+
 ## Supported Versions
 
 | Version | Supported |
