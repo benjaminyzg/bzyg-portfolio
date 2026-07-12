@@ -9,8 +9,18 @@ The purpose of this document is to provide a clear, transparent framework for:
 * Establishing a reliable, private process for reporting security vulnerabilities.
 * Ensuring that reported issues are handled with the necessary urgency and discretion to protect the community.
 
-## Supported Versions
+## Scope
+This security policy applies to all code within the [Repository Name] repository. Third-party libraries or external services used by this project are generally out of scope unless a vulnerability is directly caused by this project's implementation.
 
+## Disclosure Policy
+I follow the principle of coordinated vulnerability disclosure. Please allow [e.g., 30–90] days for a fix to be developed and deployed before making any information about the vulnerability public. I will credit contributors who responsibly report valid security issues in my security advisories.
+
+## Security Best Practices
+To help maintain a secure environment:
+* Keep your project up to date with the latest stable releases.
+* Regularly check your dependencies for known vulnerabilities using tools like `npm audit` or GitHub Dependabot.
+
+## Supported Versions
 | Version | Supported |
 | :--- | :--- |
 | 5.1.x | ✅ |
