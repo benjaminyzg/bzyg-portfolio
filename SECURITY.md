@@ -23,5 +23,6 @@ To report a vulnerability:
 * **Resolution:** If a vulnerability is confirmed, I will work on a patch and coordinate a disclosure timeline with you.
 * Communication: I will keep you updated on the progress of the fix and coordinate with you regarding the public disclosure timeline.
 
-**Responsible Disclosure**
+
+### Responsible Disclosure 
 I ask that you keep the vulnerability details private until a fix has been developed and published. I appreciate your commitment to responsible disclosure and your efforts to improve the security of this project.
